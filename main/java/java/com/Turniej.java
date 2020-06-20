@@ -7,6 +7,7 @@ public class Turniej {
     //bedzie mozliwosc wybrania turnieju z tych trzech dyscypln
     //na tablicy wyswietlac sie bedzie:
     //Drużyna1, Drużyna2, Wynik, Sędzia Główny, Sędzie pomocniczy1, Sędzia pomocniczy2
-    //start?
-    //stop?
+
+
+    //enum dla danej dyscypliny
 }

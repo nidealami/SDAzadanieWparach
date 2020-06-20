@@ -5,4 +5,7 @@ public class Sędziowie {
     //dodaj sedziego
     //usun sedziego
     //bedzie lista dostepnych sedziow
+
+    //imie
+    //nazwisko
 }
