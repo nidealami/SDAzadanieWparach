@@ -1,5 +1,8 @@
 package SDAzadanieWparach.main.java.java.com;
 
+import java.util.LinkedList;
+import java.util.List;
+
 public class Sędziowie {
     //będą przyciski:
     //dodaj sedziego
@@ -8,4 +11,8 @@ public class Sędziowie {
 
     //imie
     //nazwisko
+    private int sedzia_id;
+    private String imie;
+    private String nazwisko;
+   //to będzie potrzebne do połączenia: private List<Mecz> matches = new LinkedList<>();
 }

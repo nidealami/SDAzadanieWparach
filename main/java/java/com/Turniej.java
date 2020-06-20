@@ -10,4 +10,8 @@ public class Turniej {
 
 
     //enum dla danej dyscypliny
+
+    private int turniej_id;
+    //tutaj będzie wyświetać się lista sędziów; coś jak List<Sędziowie> ListaSędziowie
+    //jak wyżej z tym ze dla druzyn
 }

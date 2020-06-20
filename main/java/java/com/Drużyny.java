@@ -10,5 +10,7 @@ public class Drużyny {
     //wycofaj druzyne
 
     //ma być lista dostępych druzyn oraz lista grających drużyn
+private int druzyna_id;
+private String nazwaDruzyny;
 
 }
