@@ -1,4 +1,4 @@
-package SDAzadanieWparach.main.java.java.com;
+package SDAzadanieWparach.main.java;
 
 public class TablicaWyników {
     //będzie wyświetlać się drużyna oraz jej punktacja w każdej z dyscyplin

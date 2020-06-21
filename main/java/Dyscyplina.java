@@ -1,4 +1,4 @@
-package SDAzadanieWparach.main.java.java.com;
+package SDAzadanieWparach.main.java;
 
 public class Dyscyplina {
     // jeden + dwóch sędzieów pomocniczych dla: siatkówka plażowa,
