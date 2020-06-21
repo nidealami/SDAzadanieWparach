@@ -1,16 +1,16 @@
 package SDAzadanieWparach.main.java.java.com;
 
 
-public class GraJdbc {
+public class Runner {
 
     //do sprawdzenia - wzorowalam się na starych projektach
     private EntityManagerFactory managerFactory;
 
+
+    private EntityManager entityManager;
     public EntityManager getEntityManager() {
         return entityManager;
     }
-
-    private EntityManager entityManager;
 
     public void openConnetion() {
         managerFactory = Persistence.createEntityManagerFactory("mySQL");

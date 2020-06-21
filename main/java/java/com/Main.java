@@ -11,7 +11,7 @@ public class Main {
         //zobaczListeSedziow
         //wszystkie funkcjonalnosci typu dodaj/usun ktore
 //czy to będzie okej??? :
-        GraJdbc connection = new GraJdbc();
+        Runner connection = new Runner();
         connection.openConnetion();
         connection.closeConnection();
 
