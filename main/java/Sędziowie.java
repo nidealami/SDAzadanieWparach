@@ -1,21 +1,45 @@
 package SDAzadanieWparach.main.java;
 
+//import lombok.Getter;
+//import lombok.NoArgsConstructor;
+//import lombok.Setter;
+//
+//import javax.persistence.*;
+
+import java.util.LinkedList;
+import java.util.List;
+
+//@Entity
+//@Setter
+//@Getter
+//@NoArgsConstructor
 public class Sędziowie {
     //będą przyciski:
     //dodaj sedziego
     //usun sedziego
     //bedzie lista dostepnych sedziow
 
-    //imie
-    //nazwisko
+
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int sedzia_id;
+
+//    @Column(name = "Imie sedziego", nullable = false, length = 30)
     private String sedzia_imie;
+
+//    @Column(name = "Nazwisko", nullable = false, length = 30)
     private String nazwisko;
-   //to będzie potrzebne do połączenia: private List<Mecz> matches = new LinkedList<>();
+
+
+//    @OneToMany(cascade = CascadeType.ALL)
+//    @JoinColumn(name = "mecz_id")
+    private List<Mecz> mecz = new LinkedList<>();
+
+
 }
 
 
-
+//to będzie potrzebne do połączenia: private List<Mecz> matches = new LinkedList<>();
 //jakiś pomysł na bazę:
 //CREATE TABLE IF NOT EXISTS `sedziowie` (
 //  `sedzia_id` int(10) NOT NULL AUTO_INCREMENT,
