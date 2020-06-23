@@ -11,6 +11,9 @@ public class Main {
 //czy to będzie okej??? :
         Runner connection = new Runner();
         connection.openConnetion();
+
+
+
         connection.closeConnection();
 
     }

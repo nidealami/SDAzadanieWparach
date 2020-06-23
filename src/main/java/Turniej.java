@@ -1,3 +1,6 @@
+import javax.persistence.*;
+import java.util.List;
+
 public class Turniej {
     //kto z kim gra
     //jakie są zasady
@@ -8,8 +11,18 @@ public class Turniej {
 
 
     //enum dla danej dyscypliny
-
+    @Id
     private int turniej_id;
     //tutaj będzie wyświetać się lista sędziów; coś jak List<Sędziowie> ListaSędziowie
     //jak wyżej z tym ze dla druzyn
+    @Enumerated(EnumType.STRING)
+    @Column(name = "Dyscyplina", length = 30)
+    private Dyscyplina dyscyplina;
+
+    @Transient
+    List<Druzyny> teamsList;
+
+    @Transient
+    List<Sedziowie> judgesList;
+
 }
