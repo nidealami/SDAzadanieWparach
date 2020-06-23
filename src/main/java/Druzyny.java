@@ -31,29 +31,7 @@ public class Druzyny {
     @Column(name = "Dyscyplina", length = 30)
     private Dyscyplina dyscyplina;
 
-    public int getDruzyna_id() {
-        return druzyna_id;
-    }
 
-    public void setDruzyna_id(int druzyna_id) {
-        this.druzyna_id = druzyna_id;
-    }
 
-    public String getNazwaDruzyny() {
-        return nazwaDruzyny;
-    }
-
-    public void setNazwaDruzyny(String nazwaDruzyny) {
-        this.nazwaDruzyny = nazwaDruzyny;
-    }
-
-    public Druzyny(int druzyna_id, String nazwaDruzyny) {
-        this.druzyna_id = druzyna_id;
-        this.nazwaDruzyny = nazwaDruzyny;
-    }
-
-    public Druzyny() {
-
-    }
 }
 
