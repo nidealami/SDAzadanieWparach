@@ -1,5 +1,13 @@
 import javax.persistence.*;
 import java.util.List;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Entity
+@Setter
+@Getter
+@NoArgsConstructor
 
 public class Turniej {
     //kto z kim gra

@@ -2,11 +2,13 @@ import javax.persistence.*;
 import java.util.LinkedList;
 import java.util.List;
 
-//import lombok.Getter;
-//import lombok.NoArgsConstructor;
-//import lombok.Setter;
-//
-//import javax.persistence.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+@Entity
+@Setter
+@Getter
+@NoArgsConstructor
 public class Sedziowie {
 
     //będą przyciski:

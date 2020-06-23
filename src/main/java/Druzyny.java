@@ -1,5 +1,14 @@
 import javax.persistence.*;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Setter
+@Getter
+@NoArgsConstructor
+
+@Entity
 public class Druzyny {
     //czy to istotne ile osób gra w danej drużynie?
     //tu będzie odniesienie do bazy z zawodnikami

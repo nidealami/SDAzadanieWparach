@@ -1,16 +1,13 @@
 import javax.persistence.*;
 
-//import lombok.Getter;
-//import lombok.NoArgsConstructor;
-//import lombok.Setter;
-//
-//import javax.persistence.*;
-//
-//
-//@Entity
-//@Setter
-//@Getter
-//@NoArgsConstructor
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Entity
+@Setter
+@Getter
+@NoArgsConstructor
 public class Mecz {
     //zasady dla danego meczu
     //Toczą oni mecze/spotkania na zasadzie każdy z każdym.
