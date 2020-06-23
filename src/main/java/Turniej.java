@@ -25,7 +25,7 @@ public class Turniej {
     //jak wyżej z tym ze dla druzyn
     @Enumerated(EnumType.STRING)
     @Column(name = "Dyscyplina", length = 30)
-    private Dyscyplina dyscyplina;
+
 
     @Transient
     List<Druzyny> teamsList;

@@ -16,13 +16,13 @@ public class Mecz {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private int mecz_id;
-        @OneToOne
+    @OneToOne
     @JoinColumn(referencedColumnName = "mecz_id", name = "druzyna1_id")
     private int druzyna1_id;
-        @OneToOne
+    @OneToOne
     @JoinColumn(referencedColumnName = "mecz_id", name = "druzyna2_id")
     private int druzyna2_id;
-        @OneToOne
+    @OneToOne
     @JoinColumn(referencedColumnName = "mecz_id", name = "zwyciesca_id")
     private int zwyciesca_id;
 
