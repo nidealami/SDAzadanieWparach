@@ -1,3 +1,7 @@
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
 public class Runner {
 
     //do sprawdzenia - wzorowalam się na starych projektach
