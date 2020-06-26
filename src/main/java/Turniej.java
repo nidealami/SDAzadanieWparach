@@ -29,9 +29,9 @@ public class Turniej {
     private Dyscyplina dyscyplina;
 
     @Transient
-    List<Druzyny> teamsList;
+    List<Druzyny> DruzynyLista;
 
     @Transient
-    List<Sedziowie> judgesList;
+    List<Sedziowie> SedziowieLista;
 
 }

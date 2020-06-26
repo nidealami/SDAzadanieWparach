@@ -26,3 +26,27 @@ public class Runner {
         managerFactory.close();
     }
 }
+
+
+
+
+
+
+// ściąga do połączenia SWINGA:
+//public City update(City city) {
+//        manager.getTransaction().begin();
+//        manager.persist(city);
+//        manager.flush(); // wymuszenie zapisu
+//        manager.refresh(city); // odświeżenie
+//        manager.getTransaction().commit();
+//        return city;
+//    }
+//
+//    public City save(City city) {
+//        manager.getTransaction().begin();
+//        manager.persist(city);
+//        manager.getTransaction().commit();
+//        return city;
+
+
+
