@@ -1,4 +1,4 @@
-
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,6 +19,7 @@ public class Main {
         sedzia1.setSedzia_imie("Megan");
         sedzia1.setNazwisko("Bum");
 
+
         Sedziowie sedzia2 = new Sedziowie();
         sedzia2.setSedzia_imie("Robert");
         sedzia2.setNazwisko("Cmyk");
@@ -30,6 +31,10 @@ public class Main {
         Sedziowie sedzia4 = new Sedziowie();
         sedzia4.setSedzia_imie("Edmund");
         sedzia4.setNazwisko("Kwas");
+
+//        List<Sedziowie> sedziowie = connection.findSedzia("new");
+//        sedziowie.forEach(System.out::println);
+
 
         Druzyny druzyna1 = new Druzyny();
         druzyna1.setNazwaDruzyny("piraci");
@@ -98,12 +103,8 @@ public class Main {
         connection.getEntityManager().getTransaction().commit();
 
 
-
-
-
-
-
         connection.closeConnection();
+        //connection.closeConnection() czy jednak lepiej connection.stop();?
 
     }
 }

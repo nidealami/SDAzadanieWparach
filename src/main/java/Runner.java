@@ -8,12 +8,14 @@ public class Runner {
     private EntityManagerFactory managerFactory;
 
     private EntityManager entityManager;
+    //public Runner() {openConnetion();}
+
     public EntityManager getEntityManager() {
         return entityManager;
     }
 
     public void openConnetion() {
-        managerFactory = Persistence.createEntityManagerFactory("mySQL");
+        managerFactory = Persistence.createEntityManagerFactory("mysqlPU");
         entityManager = managerFactory.createEntityManager();
         System.out.println("Is open: " + entityManager.isOpen());
 
