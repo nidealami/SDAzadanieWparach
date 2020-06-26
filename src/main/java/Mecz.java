@@ -18,15 +18,15 @@ public class Mecz {
 
     @OneToOne
     @JoinColumn(referencedColumnName = "mecz_id", name = "druzyna1_id")
-    private int druzyna1_id;
+    private Druzyny druzyna1;
 
     @OneToOne
     @JoinColumn(referencedColumnName = "mecz_id", name = "druzyna2_id")
-    private int druzyna2_id;
+    private Druzyny druzyna2;
 
     @OneToOne
     @JoinColumn(referencedColumnName = "mecz_id", name = "zwyciesca_id")
-    private int zwyciesca_id;
+    private Druzyny zwyciesca;
 
     @Enumerated(EnumType.STRING)
     @Column(name = "dyscyplina", length = 20)

@@ -1,3 +1,3 @@
-public class SedziaPomocniczy extends Sedziowie{
-
-}
+//public class SedziaPomocniczy extends Sedziowie{
+//
+//}

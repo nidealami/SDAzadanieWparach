@@ -15,7 +15,7 @@ public class Druzyny {
     //ma być lista dostępych druzyn oraz lista grających drużyn
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "druzyna_id")
+    //@Column(name = "druzyna_id")
     private int druzyna_id;
 
     @Column(name = "nazwaDruzyny", nullable = false, length = 30)
@@ -26,13 +26,13 @@ public class Druzyny {
     private Dyscyplina dyscyplina;
 
 
-    @Override
-    public String toString() {
-        return "Druzyny{" +
-                "druzyna_id=" + druzyna_id +
-                ", nazwaDruzyny='" + nazwaDruzyny + '\'' +
-                                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "Druzyny{" +
+//                "druzyna_id=" + druzyna_id +
+//                ", nazwaDruzyny='" + nazwaDruzyny + '\'' +
+//                                '}';
+//    }
 }
 
 
