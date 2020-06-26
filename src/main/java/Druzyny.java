@@ -1,9 +1,8 @@
-
-
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import javax.persistence.*;
+
 @Setter
 @Getter
 @NoArgsConstructor
@@ -12,11 +11,6 @@ import javax.persistence.*;
 public class Druzyny {
     //czy to istotne ile osób gra w danej drużynie?
     //tu będzie odniesienie do bazy z zawodnikami
-    //przyciski/funkcjonalności:
-    //nowa drużyna
-    //usun druzyne
-    //zglos druzyne
-    //wycofaj druzyne
 
     //ma być lista dostępych druzyn oraz lista grających drużyn
     @Id

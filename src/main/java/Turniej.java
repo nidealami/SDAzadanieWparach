@@ -1,5 +1,6 @@
 import javax.persistence.*;
 import java.util.List;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -24,8 +25,8 @@ public class Turniej {
     //tutaj będzie wyświetać się lista sędziów; coś jak List<Sędziowie> ListaSędziowie
     //jak wyżej z tym ze dla druzyn
     @Enumerated(EnumType.STRING)
-    @Column(name = "Dyscyplina", length = 30)
-
+    @Column(name = "dyscyplina", length = 30)
+    private Dyscyplina dyscyplina;
 
     @Transient
     List<Druzyny> teamsList;
