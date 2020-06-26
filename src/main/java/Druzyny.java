@@ -1,9 +1,9 @@
-import javax.persistence.*;
+
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
+import javax.persistence.*;
 @Setter
 @Getter
 @NoArgsConstructor
@@ -21,10 +21,10 @@ public class Druzyny {
     //ma być lista dostępych druzyn oraz lista grających drużyn
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
+    @Column(name = "druzyna_id")
     private int druzyna_id;
-    @Column(name = "nazwaDruzyny",nullable = false,length = 30)
 
+    @Column(name = "nazwaDruzyny", nullable = false, length = 30)
     private String nazwaDruzyny;
 
     @Enumerated(EnumType.STRING)
@@ -32,6 +32,14 @@ public class Druzyny {
     private Dyscyplina dyscyplina;
 
 
-
+    @Override
+    public String toString() {
+        return "Druzyny{" +
+                "druzyna_id=" + druzyna_id +
+                ", nazwaDruzyny='" + nazwaDruzyny + '\'' +
+                                '}';
+    }
 }
+
+
 
