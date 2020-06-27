@@ -56,7 +56,7 @@ public class Main {
 //        druzyna5.setDyscyplina(Dyscyplina.SIATKOWKA);
 //        druzyna5.setDyscyplina(Dyscyplina.DWA_OGNIE);
 //        druzyna5.setDyscyplina(Dyscyplina.PRZECIAGANIE_LINY);
-Mecz mecz1 = new Mecz();
+        Mecz mecz1 = new Mecz();
         mecz1.setDruzyna(druzyna1);
         mecz1.setDruzyna(druzyna2);
         mecz1.setDyscyplina(Dyscyplina.SIATKOWKA);
