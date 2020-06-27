@@ -4,6 +4,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.HashSet;
+import java.util.Set;
+
 @Entity
 @Setter
 @Getter
@@ -16,27 +19,23 @@ public class Mecz {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int mecz_id;
 
-    @OneToOne
-    @JoinColumn(referencedColumnName = "mecz_id", name = "druzyna1_id")
-    private Druzyny druzyna1;
-
-    @OneToOne
-    @JoinColumn(referencedColumnName = "mecz_id", name = "druzyna2_id")
-    private Druzyny druzyna2;
-
-    @OneToOne
-    @JoinColumn(referencedColumnName = "mecz_id", name = "zwyciesca_id")
-    private Druzyny zwyciesca;
-
+    @ManyToMany
+    @JoinTable(
+            name = "mecz_druzyna",
+            joinColumns = {@JoinColumn(name = "mecz_id")},
+            inverseJoinColumns = {@JoinColumn(name = "druzyna_id")}
+    )
+    private Set<Druzyny> druzyny = new HashSet<>();
     @Enumerated(EnumType.STRING)
     @Column(name = "dyscyplina", length = 20)
     private Dyscyplina dyscyplina;
-
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "sedzia_id")
     private Sedziowie sedziowie;
-
     @Column(name = "wynik")
     private String wynik;
 
+    public void setDruzyna(Druzyny druzyna) {
+        druzyny.add(druzyna);
+    }
 }
